@@ -1,0 +1,27 @@
+<!--<div class="main-content">-->
+<!--  <div class="product-box">-->
+<!--    <img src="{{product.imageUrl}}" class="img-responsive">-->
+<!--      <h1>{{product.name}}</h1>-->
+<!--      <h1>{{product.description}}</h1>-->
+<!--  </div>-->
+<!--  <div class="price">{{product.unitPrice | currency: 'USD'}}</div>-->
+<!--  <a href="#" class="primary-btn">Add to cart</a>-->
+<!--</div>-->
+
+  <div class="detail-section">
+    <div class="container-fluid">
+      <img src="{{product.imageUrl}}" class="detail-img">
+
+      <div class="product-details-side">
+        <h3>{{product.name}}</h3>
+        <div class="price">{{product.unitPrice | currency: 'USD'}}</div>
+        <button (click)="addToCart(product)" class="au-btn-submit">Add to cart</button>
+      </div>
+
+      <hr>
+      <h4>Description</h4>
+      <p>{{product.description}}</p>
+
+      <a routerLink="=/products" class="mt-5">Product List</a>
+    </div>
+  </div>
